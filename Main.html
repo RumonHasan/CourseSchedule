@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="util.css">
+        <!-- font awesome cdn goes here -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous"/>
+        <!-- js file goes here -->
+        <script src="Scrape.js" defer></script>
+
+    </head>
+    <body>
+        <!--Header section -->
+        <section class="add-table-section">
+            <div class ="add-table-container">
+                <table class="add-table">
+                    <caption>ShortList</caption>
+                    <thead>
+                        <tr>
+                            <thead>
+                            <th class="add-column">Course Department</th>
+                            <th class="add-column">Course Name</th>    
+                            <th class="add-column">Course Title</th>
+                            <th class="add-column">Time</th>
+                            <th class="add-column">Credit</th>
+                            <th class="add-column">Instructor</th>
+                            <th class="add-column">GenEd</th>
+                            <th class="add-column">CRN</th>
+                            <th class="add-column-addDelete">Add/Drop</th>
+                            </thead>
+                        </tr>  
+                    </thead>
+                    <tbody class = "add-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- table section starts here -->
+            <section class="table-section">
+
+                <div class="select-department">
+                    <select class = "dept-select" id= "dept-select-option"><!-- Dynamic Addition through Js--></select>
+                </div>
+                
+                <div class="table-container">
+                    
+                    <div class="search-container">
+                        <input type="text" placeholder="Search..."  class="search-box">
+                        <button class="search-button"><i class="fa fa-search"></i></div>
+                    </div>
+
+                    <table class="table-schedule">
+                        <thead>
+                        <tr>
+                            <th class="column1">Dept.</th>
+                            <th class="column2">Title</th>
+                            <th class="column3">Name</th>
+                            <th class="column4">Time</th>
+                            <th class="column5">Credit</th>
+                            <th class="column6">Instructor</th>
+                            <th class="column7">GenEd.</th>
+                            <th class="column8">CRN</th>
+                            <th class="column9">Add</th>
+                        </tr>
+                        </thead>
+                        <tbody class="data-rows"></tbody>
+                    <!-- dynamic addition of data table using js script -->
+                    </table>
+                </div>
+            </section>
+        <!-- table section ends here -->
+    </body>
+</html>
